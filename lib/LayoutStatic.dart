@@ -44,16 +44,21 @@ class _LayoutStaticState extends State<LayoutStatic> {
             ),
           ],
         ),
-      body: Container(
-        child: Column(
-          children: [
-            child: Container(
-              child: Column(
-            Image.asset('../imagens/man.jpg', width: 450,)
-              ),),],
+      body: Center(
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              Image.asset('../imagens/man.jpg', width: 480,),
+              RaisedButton(
+                color: Colors.red,
+                textColor: Colors.black,
+                child: Text('Voltar'),
+                onPressed: () {}
+              )
+        ],),
+        ),
       ),
-      ),
-      
+
     );
   }
 }
